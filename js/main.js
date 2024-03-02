@@ -286,6 +286,39 @@
 		})
 	};
 
+	// var sendEmail = function() {
+	// 	console.log("sendEmail");
+
+	// 	var from_name = document.getElementById('name').value;
+	// 	var from_email = document.getElementById('email').value;
+	// 	var subject = document.getElementById('subject').value;
+	// 	var message = document.getElementById('message').value;
+	
+	// 	// Perform any validation you need here, like checking if the fields are not empty
+	// 	console.log(from_name);
+	// 	console.log(from_email);
+	// 	console.log(subject);
+	// 	console.log(message);
+
+	// 	emailjs.send("service_tharungr", "template_4by8dwk", {
+	// 		from_name: from_name,
+	// 		reply_to: from_email,
+	// 		subject: subject,
+	// 		message: message,
+	// 		to_name: 'Tharun' // This should be your name or your company's name
+	// 	})
+	// 	.then(function(response) {
+	// 		console.log('SUCCESS!', response.status, response.text);
+	// 		alert('Your message has been sent successfully!');
+	// 	}, function(error) {
+	// 		console.log('FAILED...', error);
+	// 		alert('Failed to send the message, please try again.');
+	// 	});
+	// }
+	
+	
+	
+
 	// Document on load.
 	$(function(){
 		fullHeight();
@@ -304,6 +337,7 @@
 		sliderMain();
 		stickyFunction();
 		owlCrouselFeatureSlide();
+		// sendEmail();
 	});
 
 
