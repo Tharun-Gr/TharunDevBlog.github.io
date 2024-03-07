@@ -364,7 +364,7 @@
 }
 
 .page-client .img-place img {
-  filter: grayscale(100%) brightness(2);
+  /* filter: grayscale(100%) brightness(2); */
 }
 
 .page-client .img-place:hover img {
