@@ -40,9 +40,9 @@
   <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/work/serverless.png)">
     <!-- Caption header -->
     <div class="caption-header text-center wow zoomInDown">
-      <h5 class="fw-normal">Hey</h5>
-      <h1 class="fw-light mb-4"><b class="fg-theme">Serverless</h1>
-        <a href="https://github.com/HeyServerless" target="_blank"><div class="badge">https://github.com/HeyServerless</div></a>
+      <h5 class="fw-normal">Project</h5>
+      <h1 class="fw-light mb-4">i<b class="fg-theme">Hype</h1>
+        <a href="https://github.com/Tharun-Gr/iHype-15.git" target="_blank"><div class="badge">https://github.com/Tharun-Gr/iHype-15.git</div></a>
     </div> <!-- End Caption header -->
   </div>
 
@@ -52,35 +52,43 @@
         <h1 class="fw-light">Tech Stack</h1>
         <!-- <p class="text-muted">Hi</p> -->
         <ul class="theme-list">
-          <li><b>Golang</li>
-          <li><b>Docker</li>
-          <li><b>Kubernetes</li>
+          <li><b>Apache Kafka</li>
+          <li><b>Apache Spark</li>
+          <li><b>Amazon DynamoDB</li>
+          <li><b>Amazon QuickSight</li>
         </ul>
       </div>
 
       <div class="row">
         <h1 class="fw-light">Project overview</h1>
-        <p class="text-muted">This project aimed to design and implement a serverless computing model, known as Function-as-a-Service (FaaS), from scratch. Our focus was to address the inherent challenges of distributed systems such as scalability, fault tolerance, and concurrency, ensuring efficient management and dynamic resource allocation without the need for server management by the use</p>
+        <p class="text-muted">A system designed to analyze Twitter sentiment on the iPhone 15 release in real-time, showcasing integration with Kafka, Spark, and DynamoDB for data streaming, processing, and storage.</p>
         
-        <h1 class="fw-light">Technical Challenges and Solutions</h1>
+        <h1 class="fw-light">Key Components</h1>
         <div>
-          <h5 class="fg-theme mb-3">Fault Tolerance</h5>
-          <p class="text-muted">Implemented Byzantine Fault Tolerance (BFT) to handle faults effectively within the distributed nodes, ensuring reliability and stability</p>
+          <h5 class="fg-theme mb-3">Twitter Streaming API Integration</h5>
+          <p class="text-muted">Uses Tweepy to stream iPhone 15-related tweets to Kafka.</p>
         </div>
         <div>
-          <h5 class="fg-theme mb-3">Scalability</h5>
-          <p class="text-muted">Developed a Dependable Compute Cloud (DC2) based Kalman's filtering technique for autoscaling, enabling the system to dynamically adjust resources based on demand.</p>
+          <h5 class="fg-theme mb-3">Sentiment Analysis Pipeline</h5>
+          <p class="text-muted">Applies Spark for real-time sentiment analysis of tweets, storing outcomes in DynamoDB.</p>
         </div>
         <div>
-          <h5 class="fg-theme mb-3">Concurrency Management</h5>
-          <p class="text-muted">Utilized Directed Acyclic Graphs (DAG) for managing dependent operations, ensuring efficient task scheduling and execution.</p>
+          <h5 class="fg-theme mb-3">Infrastructure Setup and Management</h5>
+          <p class="text-muted">Provides setup instructions for Kafka, Spark, and required Python libraries.</p>
+        </div>
+        <div>
+          <h5 class="fg-theme mb-3">Data Storage and Visualization</h5>
+          <p class="text-muted">Discusses storing sentiment analysis results in DynamoDB and potential visualization techniques.</p>
         </div>
 
-        <h1 class="fw-light">System Architecture</h1>
-        <div style="overflow: scroll;"><img src="../assets/img/work/serverless-diagram.png" alt=""></div>
+        <h1 class="fw-light">Technical Achievements</h1>
+        <p class="text-muted">Demonstrates real-time data processing, cloud integration, and scalable system architecture capabilities.</p>
 
-        <h1 class="fw-light">Outcome and Reflection</h1>
-        <p class="text-muted">The project successfully delivered a scalable, fault-tolerant serverless platform, capable of handling concurrent operations and varying loads efficiently. It highlighted our team's ability to apply complex algorithms to practical problems, contributing significantly to the distributed computing domain. Challenges such as implementing BFT and Kalman's filtering were particularly instructive, offering deep insights into distributed system reliability and resource optimization.</p>
+        <h1 class="fw-light">Recommendations for Improvement</h1>
+        <p class="text-muted">Proposes more advanced NLP for better analysis accuracy, implementing dashboards for visualization, and broadening data sources for comprehensive sentiment insights.</p>
+
+        <h1 class="fw-light">Conclusion</h1>
+        <p class="text-muted">The project effectively processes and analyzes Twitter sentiment regarding the iPhone 15, demonstrating technical skill in data handling and suggesting areas for further development.</p>
       </div>
         <!-- <div class="col-lg-4 py-3">
           <div class="img-place wow fadeInUp">
