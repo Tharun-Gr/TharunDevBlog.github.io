@@ -40,12 +40,12 @@
   <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/work/serverless.png)">
     <!-- Caption header -->
     <div class="caption-header text-center wow zoomInDown">
-      <h5 class="fw-normal">Hey</h5>
-      <h1 class="fw-light mb-4"><b class="fg-theme">Serverless</h1>
-        <a href="https://github.com/HeyServerless" target="_blank"><div class="badge">https://github.com/HeyServerless</div></a>
+      <h5 class="fw-normal">Project</h5>
+      <h1 class="fw-light mb-4">Analysis of Richter’s Predictor using<b class="fg-theme"> XGBoost and Ensemble Learning</h1>
+        <a href="https://github.com/Tharun-Gr/Richter-s-Predictor-using-XGBoost-and-Ensemble-Learning" target="_blank"><div class="badge">https://github.com/Tharun-Gr/Richter-s-Predictor-using-XGBoost-and-Ensemble-Learning.git</div></a>
         <br>
         <br>
-        <div><a href="./../assets/docs/serverless-report.pdf" target="_blank" class="btn btn-theme-outline">Download Report</a></div>
+        <div><a href="./../assets/docs/predictor.pdf" target="_blank" class="btn btn-theme-outline">Download Report</a></div>
     </div> <!-- End Caption header -->
   </div>
 
@@ -55,35 +55,39 @@
         <h1 class="fw-light">Tech Stack</h1>
         <!-- <p class="text-muted">Hi</p> -->
         <ul class="theme-list">
-          <li><b>Golang</li>
-          <li><b>Docker</li>
-          <li><b>Kubernetes</li>
+            <li><b>Python</li>
+            <li><b>XGBoost</li>
+            <li><b>Ensemble Learning</li>
+            <li><b>KNN</li>
+            <li><b>Random Forest Classifier</li>
+            <li><b>Logistic Regression</li>
         </ul>
       </div>
 
-      <div class="row">
-        <h1 class="fw-light">Project overview</h1>
-        <p class="text-muted">This project aimed to design and implement a serverless computing model, known as Function-as-a-Service (FaaS), from scratch. Our focus was to address the inherent challenges of distributed systems such as scalability, fault tolerance, and concurrency, ensuring efficient management and dynamic resource allocation without the need for server management by the use</p>
+      <div class="row" style="flex-direction: column;">
+        <h1 class="fw-light">Objective</h1>
+        <p class="text-muted">This project explores the effectiveness of various machine learning models, with a focus on ensemble learning, to predict earthquake-induced damage to buildings. Inspired by the "Richter’s Predictor" research, the aim was to find the most efficient model for assessing damage severity caused by earthquakes.</p>
         
-        <h1 class="fw-light">Technical Challenges and Solutions</h1>
+        <h1 class="fw-light">Data and Methods</h1>
+        <p class="text-muted">Utilizing a dataset with details on building structures and socio-economic factors from the Gorkha earthquake, the study examined multiple models including Logistic Regression, KNN, Random Forest, and XGBoost. Techniques such as feature selection and parameter tuning were employed, alongside sampling methods to address data imbalance.</p>
+
+        <h1 class="fw-light">Findings</h1>
         <div>
-          <h5 class="fg-theme mb-3">Fault Tolerance</h5>
-          <p class="text-muted">Implemented Byzantine Fault Tolerance (BFT) to handle faults effectively within the distributed nodes, ensuring reliability and stability</p>
+          <h5 class="fg-theme mb-3">XGBoost Excellence</h5>
+          <p class="text-muted">XGBoost outperformed other models and ensemble methods in predicting damage grades, showcasing high accuracy and F1 score.</p>
         </div>
         <div>
-          <h5 class="fg-theme mb-3">Scalability</h5>
-          <p class="text-muted">Developed a Dependable Compute Cloud (DC2) based Kalman's filtering technique for autoscaling, enabling the system to dynamically adjust resources based on demand.</p>
+          <h5 class="fg-theme mb-3">Ensemble Learning Insights</h5>
+          <p class="text-muted">While combining models (KNN, Random Forest, and XGBoost) into ensembles slightly improved predictions, XGBoost alone was more efficient, challenging the notion that more complex models always yield better results.</p>
         </div>
         <div>
-          <h5 class="fg-theme mb-3">Concurrency Management</h5>
-          <p class="text-muted">Utilized Directed Acyclic Graphs (DAG) for managing dependent operations, ensuring efficient task scheduling and execution.</p>
+          <h5 class="fg-theme mb-3">Impact of Sampling</h5>
+          <p class="text-muted">Sampling techniques aimed at balancing the dataset showed mixed effectiveness, underscoring the complexity of managing class imbalance in machine learning.</p>
         </div>
 
-        <h1 class="fw-light">System Architecture</h1>
-        <div style="overflow: scroll;"><img src="../assets/img/work/serverless-diagram.png" alt=""></div>
+        <h1 class="fw-light">Conclusion</h1>
+        <p class="text-muted">The project underscores XGBoost's robustness in earthquake damage prediction, offering valuable insights for disaster management strategies. It opens pathways for future research to enhance predictive modeling in natural disaster contexts, emphasizing the potential of machine learning in real-world applications.</p>
 
-        <h1 class="fw-light">Outcome and Reflection</h1>
-        <p class="text-muted">The project successfully delivered a scalable, fault-tolerant serverless platform, capable of handling concurrent operations and varying loads efficiently. It highlighted our team's ability to apply complex algorithms to practical problems, contributing significantly to the distributed computing domain. Challenges such as implementing BFT and Kalman's filtering were particularly instructive, offering deep insights into distributed system reliability and resource optimization.</p>
       </div>
         <!-- <div class="col-lg-4 py-3">
           <div class="img-place wow fadeInUp">
