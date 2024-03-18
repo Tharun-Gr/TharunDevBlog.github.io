@@ -5,18 +5,18 @@ $(function() {
   });
   
   // filter items on button click
-  // $('.filterable-button').on( 'click', 'button', function() {
-  //   var filterValue = $(this).attr('data-filter');
-  //   $grid.isotope({ filter: filterValue });
-  // });
+  $('.filterable-button').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
   
-  // $('.testi-carousel').owlCarousel({
-  //   margin: 0,
-  //   loop: true,
-  //   autoplay: true,
-  //   autoplayTimeout: 4000,
-  //   items: 1,
-  // });
+  $('.testi-carousel').owlCarousel({
+    margin: 0,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    items: 1,
+  });
   
   // Nice select
   $('.vg-select').niceSelect();
@@ -30,41 +30,41 @@ $(function() {
   // Back to top
   var backTop = $(".btn-back_to_top");
   
-  // $(window).scroll(function() {
-  //   if($(document).scrollTop() > 400) {
-  //     backTop.css('visibility', 'visible');
-  //   }
-  //   else if($(document).scrollTop() < 400) {
-  //     backTop.css('visibility', 'hidden');
-  //   }
-  // });
+  $(window).scroll(function() {
+    if($(document).scrollTop() > 400) {
+      backTop.css('visibility', 'visible');
+    }
+    else if($(document).scrollTop() < 400) {
+      backTop.css('visibility', 'hidden');
+    }
+  });
   
-  // backTop.click(function() {
-  //   $('html').animate({
-  //     scrollTop: 0
-  //   }, 1000);
-  //   return false;
-  // });
+  backTop.click(function() {
+    $('html').animate({
+      scrollTop: 0
+    }, 1000);
+    return false;
+  });
   
-  // $.fn.toggleSelected = function(options) {
-  //   var defaults = $.extend({
-  //     classes: 'selected',
-  //     itemSelector: this.children(),
-  //   });
+  $.fn.toggleSelected = function(options) {
+    var defaults = $.extend({
+      classes: 'selected',
+      itemSelector: this.children(),
+    });
     
-  //   return this.each(function() {
-  //     var o = defaults;
-  //     var sel = o.itemSelector;
+    return this.each(function() {
+      var o = defaults;
+      var sel = o.itemSelector;
       
-  //     sel.click(function() {
-  //       var self = $(this);
-  //       self.addClass(o.classes);
-  //       self.siblings().removeClass(o.classes);
-  //     });
-  //   });
-  // };
+      sel.click(function() {
+        var self = $(this);
+        self.addClass(o.classes);
+        self.siblings().removeClass(o.classes);
+      });
+    });
+  };
   
-  // $('[data-toggle="selected"]').toggleSelected();
+  $('[data-toggle="selected"]').toggleSelected();
 });
 
 $(document).ready(function () {
