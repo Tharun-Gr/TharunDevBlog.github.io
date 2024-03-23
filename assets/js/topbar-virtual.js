@@ -1,7 +1,7 @@
 $(function() {
   var $grid = $('.gridder').isotope({
     itemSelector: '.grid-item',
-    percentPosition: true
+    // percentPosition: true
   });
   
   // filter items on button click
